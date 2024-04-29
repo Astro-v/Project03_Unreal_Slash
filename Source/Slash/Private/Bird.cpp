@@ -1,6 +1,3 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
-
 #include "Bird.h"
 #include "Components/CapsuleComponent.h"
 #include "Components/SkeletalMeshComponent.h"
@@ -10,7 +7,6 @@
 #include "GameFramework/SpringArmComponent.h"
 #include "Camera/CameraComponent.h"
 
-// Sets default values
 ABird::ABird()
 {
 	PrimaryActorTick.bCanEverTick = true;
@@ -32,7 +28,6 @@ ABird::ABird()
 	ViewCamera->SetupAttachment(SpringArm);
 }
 
-// Called when the game starts or when spawned
 void ABird::BeginPlay()
 {
 	Super::BeginPlay();
@@ -47,7 +42,6 @@ void ABird::BeginPlay()
 	}
 }
 
-// Called every frame
 void ABird::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
