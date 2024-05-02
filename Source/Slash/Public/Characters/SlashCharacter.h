@@ -40,7 +40,6 @@ protected:
 
 	void Move(const FInputActionValue& Value);
 	void Look(const FInputActionValue& Value);
-	void Jump() override;
 
 private:
 	UPROPERTY(VisibleAnywhere)
